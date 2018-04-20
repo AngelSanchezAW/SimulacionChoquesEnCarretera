@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Simulación de Sistemas</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.umm.edu.mx/sites/default/files/faviconummm.ico" />
+</head>
+<body>
+<div id="contenedor" class="container">
+		<div class="row">
+			<div class="col-3 ">
+				<img class="logo" width="230px;" src="img/logoumm.png" alt="">
+			</div>
+			<div class="col-9">
+				<h1 class="font-weight-bold">Simulación de Sistemas</h1>
+			</div>
+			<br><br><br><br>
+			<div class="col-3">
+				<div class="vertical-menu">
+				  <nav><a href="#portada"><i class="fas fa-file-alt"></i> Portada</a></nav>
+				  <nav><a href="#desSistema"><i class="fas fa-file-alt"></i> Descripción del sistema</a></nav>
+				  <nav><a href="#desProblema"><i class="fas fa-file-alt"></i> Descripción del problema</a></nav>
+				  <nav><a href="#baseDatos"><i class="fas fa-file-alt"></i> Algoritmo en pseoducódigo</a></nav>
+				  <nav><a href="#baseDatos"><i class="fas fa-file-alt"></i> Diagrama de flujo de datos</a></nav>
+				  <nav><a href="#baseDatos"><i class="fas fa-file-alt"></i> Identificación de parámetros</a></nav>
+				  <nav><a href="#baseDatos"><i class="fas fa-file-alt"></i> Diseño del experimento</a></nav>
+				  <nav><a style="background: #fec236; color: white; text-align: center;" href="#baseDatos"><i class="fas fa-cubes"></i></i> Simulación</a></nav>
+				</div>
+			</div>
+			<div class="col-9">
+				<section id="portada">
+					<center><img style="margin-top: -131px;" class="img-fluid" src="img/road-1.png" alt="">
+				</section>
+				<section id="desSistema" class="introduccion">
+					<h2>Descripción  del  sistema</h2>
+					<p>El  sistema  diseñado  permite  validar  que  opciones  son  las  más  viables  para  la  carretera  que  se  está  estudiando,  es  decir,  si  es  necesario  reducir  la  velocidad  de  los  carriles  o  bien  tener  vigilancia  en  la  carretera. </p>
+					<p>Está  simulación  del  sistema  nos  muestra  en  que  transcurso  de  la  carretera  y  sobre  que  carriles  se  presentan  más  inconveniente  a  la  hora  de  transitarla  en  horas  específicas,  asimismo,  saber  el  motivo  por  el  cual  se  presentan  dichos  inconvenientes.  La  idea  principal  es  ver  cada  comportamiento  de  cada  carril  según  las  estadísticas  brindadas  a  partir  de  un  estudio  en  el  cual  se  va  a  determinar  todo  lo  que  sucede  durante  los  días  más  hábiles  dentro  de  un  periodo  de  años  para  de  esta  manera  tener  lo  necesario  para  tomar  la  decisión  más  idónea  para  el  problema  presentado.</p>
+					<p>El  sistema  nos  mostrará  los  carros  que  están  circulando  por  cada  carril,  el  exceso  de  velocidad  de  cada  vehículo,  los  choques  que  transcurren  en  un  día,  la  probabilidad  y  el  porcentaje  de  vehículos  por  día,  la  semana,  además  simulado  por  un  año.</p>
+					<p>Gracias  a  este  sistema  el  problema  que  presenta  el  gobierno  podrá  ser  evaluado  y  a  detalle  y  tomar  la  decisión  más  viable  a  implementar  en  dicha  carretera.</p>
+
+				</section>
+				<section id="desProblema" class="configuracionWinServer">
+					<h2>Descripción  del  problema</h2>
+					<p>En  una  avenida  principal,  entre  las  8:00  y  10:00  a.m.  horas  de  principal  tráfico,  circulan  en  promedio  15  coches  cada  3  segundos  con  una  desviación  estándar  de  2  coches.  El  análisis  de  datos  históricos  arroja  que  están  normalmente  distribuidos.  Los  coches  proceden  de  una  carretera  federal  que  se  interconecta  con  la  autopista  estatal.</p>
+					<p>La  autopista  estatal  se  compone  de  5  carriles,  el  de  tráfico  lento,  3  de  tráfico  limitado  y  el  carril  de  alta  velocidad.  Las  velocidades  máximas  permitidas  en  cada  carril  son:</p>
+					<img src="img/velocidades.png" alt="" class="img-fluid">
+					<p>Se  sabe  por  medidas  históricas  previas  que  el  5  %  de  los  coches  que  entran  lo  hacen  por  el  carril  de  baja  velocidad,  20  %  usa  el  segundo  carril,  25  %  el  cuarto  carril,  10  %  el  carril  de  alta  velocidad  y  el  resto  se  concentra  en  el  carril  central  (tercer  carril).</p>
+					<p>En  general  se  sabe  que  solo  30  %  de  los  coches  en  cada  carril  respetan  el  límite  de  velocidad,  mientras  que  el  resto  conduce  entre  un  10  %  y  hasta  un  60  %  más  de  lo  permitido.  Se  asume  que  todos  los  automovilistas  que  conducen  con  exceso  lo  hacen  con  la  misma  velocidad  (no  hay  velocidad  diferenciada  por  cada  coche).</p>
+					<p>En  cada  Carril,  el  conjunto  de  automovilistas  que  conducen  arriba  del  40  %  del  límite  de  velocidad  cambian  de  carril  al  inmediato  siguiente,  del  carril  1  al  2,  del  2  al  3,  excepto  los  que  conducen  en  el  último  carril,  que  reducen  su  velocidad  y  bajan  al  cuarto  carril.</p>
+					<p>Si  en  un  instante  dado,  el  total  de  coches  que  circulan  en  un  carril,  quitando  los  coches  que  salen  e  incorporando  los  coches  que  entran  es  por  un  total  de  hasta  5  coches,  no  hay  probabilidad  de  choque.  Si  es  de  6  coches,  la  probabilidad  es  de  un  50  %,  de  7  coches,  del  80  %,  más  de  7  coches  hay  un  choque  seguro  y  participa  el  30  %  de  los  coches  que  en  ese  momento  estén  en  circulación.</p>
+					<p>El  gobierno  estatal  tiene  fuertes  presiones  sociales  por  la  cantidad  frecuente  de  choques  que  se  presentan.  También  las  compañías  aseguradoras  desean  se  tomen  medidas  necesarias,  pues  la  siniestralidad  es  un  factor  determinante  en  su  negocio.</p>
+					<p>Se  necesita  saber  el  flujo  promedio  final  de  coches  por  carril,  cuántos  choques  pueden  ocurrir  en  promedio  a  la  semana  (de  lunes  a  viernes)  y  decidir  si  conviene  colocar  vigilancia  o  reductores  de  velocidad  que  obliguen  a  los  coches  bajar  la  velocidad.</p>
+					<h3>ACTIVIDADES  BLOQUE1</h3>
+					<li>Describa  detalladamente  cual  es  el  sistema  que  identifica,  enliste  las  variables  de  entrada  y  los  datos  de  salida  que  se  esperan.  ¿Identifica  otros  subsistemas  asociados? </li>
+					<li>Describa  de  la  forma  más  clara  posible  cuál  es  el  problema  que  se  plantea,  así  como  el  objetivo  del  caso,  es  decir  la  solución  que  se  busca.</li>
+					<li>Describa  detalladamente  cómo  realizaría  el  modelo  del  sistema  anterior,  diseñando  el  diagrama  de  flujo  de  datos.  ¿Cuántos  módulos  o  subprocesos  identifican?</li>
+					<li>Enliste  con  claridad  dentro  del  diagrama  de  flujo  elaborado,  de  qué  parámetros  se  dispone  en  cada  caso,  así  como  las  funciones  de  probabilidad  que  se  presentan  como  datos  dados.</li>
+					<h3>PREGUNTA  BLOQUE  2</h3>
+					<p>Escriba  un  programa  (puede  ser  un  lenguaje  procedimental  o  una  hoja  de  cálculo  para  simular  el  caso).</p>
+					<p>Simule  el  tráfico  diario  en  los  5  carriles  en  cada  día  de  la  semana  entre  las  8:00  y  10:00  am.  Con  ella  obtenga  la  cantidad  de  choques  que  ocurren  cada  día  en  esa  simulación.</p>
+					<p>Para  cada  día  por  separado,  calcule  para  cada  carril  la  media,  mediana,  moda,  varianza  y  desviación  estándar  de  choques  en  tránsito  finales.</p>
+					<p>Mediante  una  prueba  de  bondad  de  ajuste,  usando  los  parámetros  estadísticos  del  paso  anterior,  sugiera  la  función  de  distribución  de  probabilidad  que  describa  cómo  se  distribuyen  los  coches  en  los  5  carriles  al  final  del  reordenamiento.</p>
+				</section>
+				<section id="marcoTeorico">
+					<h2>Marco  teórico</h2>
+					<p>La  simulación  es  el  arte  y  ciencia  de  crear  una  representación  o  un  sistema  para  los  propósitos  de  experimentación  y  evaluación.  Además,  la  simulación  ayuda  a  mejorar  y  optimizar  los  sistemas  lógicos  haciendo  a  esto  más  productivo.</p>
+					<p>Los  objetivos  de  la  simulación  de  procesos  es  que  permite  predecir  el  funcionamiento  lógico  de  diversas  situaciones  reales  o  previsibles,  también  permite  la  capacidad  de  analizar  las  posibles  alternativas  a  la  optimización  del  sistema,  sin  tener  que  alterar  físicamente  el  mismo.</p>
+					<p>Las  etapas  de  un  proyecto  de  simulación  de  procesos  son  los  siguientes:</p>
+					<li>Definición  y  alcance</li>
+					<li>Elaboración  y  modelo  de  escenarios</li>
+					<li>Validación  y  resultados</li>
+					<li>Documentación  y  entrega  del  proyecto</li>
+					<p>La  estadística  surge  de  la  necesidad  de  analizar  y  resumir  información,  la  infinitud  de  datos  que  nos  rodean,  para  poder  comprender  y  utilizarla.  Es  un  área  de  las  matemáticas,  pero  se  encuentra  su  aplicación  en  muchas  áreas  de  conocimiento  tales  como  medicina,  juego,  economía  doméstica,  ecología,  tecnología,  etc.</p>
+					<p>También  es  una  herramienta  de  estudio  de  un  colectivo,  para  la  cual  se  emplea  un  método  (estadístico)  y  tiene  como  objeto  establecer  predicciones  de  cambio  en  relación  en  un  futuro  incierto.    Por  último,  la  estadística  no  son  sólo  los  resultados  de  encuestas,  ni  el  cálculo  de  unos  porcentajes,  sino  un  método  científico  que  pretende  sacar  conclusiones  a  partir  de  unas  observaciones  hechas.</p>
+					<p>Computación  es  el  sinónimo  de  informática.  Como  tal,  se  refiere  a  la  tecnología  desarrollada  para  el  tratamiento  automático  de  la  información  mediante  el  uso  de  ordenadores.  También  es  un  área  de  conocimiento  construidos  por  disciplinas  relativas  a  la  ciencia  y  la  tecnología.</p>
+					<li>Estructura  de  datos  y  algoritmos</li>
+					<li>Sistemas  operativos</li>
+					<li>Arquitectura  de  computadoras</li>
+					<li>Lenguajes  de  programación</li>
+					<p>Una  de  estas  ideas  que,  según  leemos  en  <a href="https://www.xatakaciencia.com/psicologia/por-que-construir-mas-carreteras-no-mejora-el-trafico" target="_blank">el  blog  de  ciencia  de  Xataka</a>  no  funcionaría,  es  la  de  construir  nuevas  carreteras  para  conseguir  mejorar  eltráfico.  A  priori,  si  el  ser  humano  fuera  completamente  racional,  la  ecuación  parece  lógica:  Si  hay  1000  coches  que  circulan  por  una  carretera,  y  se  crea  una  nueva  vía  para  el  mismo  trayecto,  lo  lógico  sería  pensar  que  500  coches  irían  por  cada  vía,  lo  que  ocasionaría  un  tráfico  fluido  por  ambas.  Sin  embargo,  está  demostrado  que  este  fenómeno  no  ocurre,  y  que  lo  que  pasaría  únicamente  es  que  se  llenarían  ambas  vías,  es  decir,  aparecerían  nuevos  coches  para  realizar  el  trayecto.  ¿Por  qué  ocurre  este  fenómeno?  Según  el  experto  en  tráfico  Frank  Quon,  la  explicación  se  debe  a  lo  que  él  denomina  como  demanda  latente,  una  demanda  de  uso  que,  por  así  decirlo,  está  dormida,  a  la  espera  de  poder  materializarse  cuando  las  condiciones  son  las  adecuadas.  Es  decir,  gente  que,  en  el  escenario  tradicional  habría  elegido  utilizar  otro  medio  de  transporte  (autobús,  tren  o  bicicleta)  para  llegar 10a  su  destino,  y  que  ante  la  nueva  infraestructura  decide  utilizar  su  coche  para  ese  trayecto.  Es  decir,  un  nuevo  recurso  crearía  nuevos  incentivos  de  uso,  lo  que  aumentaría  la  demanda,  y  por  tanto  no  serviría  de  nada  para  reducir  el  tráfico.</p>
+					<p>La  ecuación  también  funciona  a  la  inversa,  es  decir,  a  menos  carreteras  también  hay  menos  tráfico,  por  el  mismo  motivo  basado  en  la  gestión  de  expectativas  del  ser  humano.</p>
+					<p>Por  esto  es  tan  importante  tener  un  equilibrio  entre  las  diferentes  infraestructuras  y  medios  de  transporte,  que  obliguen  a  decidir  a  las  personas  en  función  de  la  eficiencia  del  mismo  para  su  necesidad  concreta,  sin  crear  estímulos  adicionales  donde  no  son  imprescindibles.</p>
+					Enlaces:
+				</section>
+				<section class="Algoritmo">
+					<h2>Algoritmo en pseoducódigo</h2>
+					<img src="img/carbon.png" class="img-fluid" alt="">
+				</section>
+				<section class="Diagrama">
+					<h2>Diagrama de flujo de datos</h2>
+					<p>En el siguiente enlace se puede visualizar el diagrama sin cortes. <a href="https://drive.google.com/open?id=1PU34DsTOnK0NliDQ5yeqqqXvjMl3YvIt">Ver diagrama</a></p>
+					<center><img src="img/d1.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d2.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d3.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d4.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d5.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d6.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d7.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d8.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d9.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d10.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d11.png" class="img-fluid" alt=""></center>
+					<center><img src="img/d12.png" class="img-fluid" alt=""></center>
+				</section>
+				<section id="parametros">
+					<h2>Identificación de parámetros</h2>
+					<p>Los elementos claves para la identificación de parámetros de un sistema son:</p>
+					<li>Estudio experimental (adquisición de datos)</li>
+					<li>Formulación de un criterio</li>
+					<li>Seleccionar la estructura del modelo</li>
+					<li>La estimación de parámetros</li>
+					<li>La validación de estos parámetros estimados</li>
+					<p>Seleccionar una señal de entrada requiere experiencia y conocimiento del tipo del proceso a controlar.</p>
+					<p>En el control adaptativo los parámetros del proceso cambian continuamente, por ello es necesario que los métodos de estimación actualicen los parámetros recursivamente.</p>
+				</section>
+				<section id="diseñoS">
+					<h2>Diseño del experimento de simulación</h2>
+					<p>La simulación como ya se comentó anteriormente fue creada en JavaScript, el sistema se estará ejecutando en un servidor, pero aquí se anexa el enlace de la imagen del código para crear el sistema y el enlace para ejecutar dicho sistema.</p>
+				</section>
+				<section class="codigo">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="simulacion">
+					<div class="row">
+			<div class="col-12">
+					<br>
+					<button onclick="ejecutar();" type="button" class="btn btn-warning">SIMLUAR UNA SEMANA</button>
+					<button onclick="ejecutarUnAño();" type="button" class="btn btn-warning">SIMLUAR 20 SEMANAS</button>
+					<br><br>		
+				</div>
+			</div>
+			<div id="resultados" class="row">
+			</div>
+			<div class="row">
+				<div id="carrosFinalDelDiaPorCarril" class="col-12">
+				</div>
+				<div id="titulo2" class="col-12">
+					
+				</div>
+				<div id="promediosFinales" class="col-4">
+				</div>
+				<div id="promediosFinales2" class="col-4">
+				</div>
+				<div id="promediosFinales3" class="col-4">			
+				</div>
+			</div>
+			<hr>
+			<div id="estadisticas1" class="row">
+					
+				</div>
+				<div class="row">
+					<div id="estadisticas2" class="col"></div>
+					<div id="estadisticas3" class="col"></div>
+					<div id="estadisticas4" class="col"></div>
+					<div id="estadisticas5" class="col"></div>
+					<div id="estadisticas6" class="col"></div>
+				</div>
+				</section>
+			</div>
+		</div>
+	</div>				
+	<!-- jQuery, Bootstrap, Script-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	  new WOW().init();
+	</script>
+		<script>
+		$('nav a').click(function(e){
+	e.preventDefault();
+	$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+});
+	</script>
+	</body>
+</html>
